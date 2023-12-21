@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var openHotelView: Bool
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button {
+                openHotelView.toggle()
+                print("Go to check hotel!")
+            } label: {
+                Text("Посмотреть отель")
+            }
+            .fullScreenCover(isPresented: $openHotelView) {
+                HotelMainView()
+            }
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

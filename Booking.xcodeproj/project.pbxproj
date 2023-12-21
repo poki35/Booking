@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A65ADC8D2B34747E00583DF1 /* HotelMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65ADC8C2B34747E00583DF1 /* HotelMainView.swift */; };
 		A68499312B3461870003E5A9 /* BookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68499302B3461870003E5A9 /* BookingApp.swift */; };
 		A68499332B3461870003E5A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68499322B3461870003E5A9 /* ContentView.swift */; };
 		A68499352B3461880003E5A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68499342B3461880003E5A9 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A65ADC8C2B34747E00583DF1 /* HotelMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelMainView.swift; sourceTree = "<group>"; };
 		A684992D2B3461870003E5A9 /* Booking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Booking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68499302B3461870003E5A9 /* BookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingApp.swift; sourceTree = "<group>"; };
 		A68499322B3461870003E5A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A65ADC8B2B34746200583DF1 /* HotelMain */ = {
+			isa = PBXGroup;
+			children = (
+				A65ADC8C2B34747E00583DF1 /* HotelMainView.swift */,
+			);
+			path = HotelMain;
+			sourceTree = "<group>";
+		};
+		A65ADC902B3474B400583DF1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A68499302B3461870003E5A9 /* BookingApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		A68499242B3461870003E5A9 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +113,9 @@
 		A684992F2B3461870003E5A9 /* Booking */ = {
 			isa = PBXGroup;
 			children = (
-				A68499302B3461870003E5A9 /* BookingApp.swift */,
+				A65ADC902B3474B400583DF1 /* Main */,
 				A68499322B3461870003E5A9 /* ContentView.swift */,
+				A65ADC8B2B34746200583DF1 /* HotelMain */,
 				A68499342B3461880003E5A9 /* Assets.xcassets */,
 				A68499362B3461880003E5A9 /* Booking.entitlements */,
 				A68499372B3461880003E5A9 /* Preview Content */,
@@ -260,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A68499332B3461870003E5A9 /* ContentView.swift in Sources */,
+				A65ADC8D2B34747E00583DF1 /* HotelMainView.swift in Sources */,
 				A68499312B3461870003E5A9 /* BookingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
