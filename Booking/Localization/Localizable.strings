@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Booking
+
+  Created by Kirill Ponomarenko on 22.12.23.
+  
+*/
+
+"HOTEL" = "Отель";
+"ROOM_SELECT" = "К выбору номера";
+"PERFECT" = "5 Превосходно";
+"HOTEL_NAME" = "Steigenberger Makadi";
+"LOCATION" = "Madinat Makadi, Safaga Road, Makadi Bay, Египет";
+"PRICE" = "от 134 673 ₽";
+"PER_TOUR" = "за тур с перелётом";
+"ABOUT_HOTEL" = "Об отеле";
+"HOTEL_DECRIPTION" = "Отель VIP-класса с собственными гольф полями. Высокий уровнь сервиса. Рекомендуем для респектабельного отдыха. Отель принимает гостей от 18 лет!";
+"COMFORTS" = "Удобства";
+"WHATS_ON" = "Что включено";
+"WHATS_LEFT_OUT" = "Что не включено";
+"ESSENTIALS" = "Самое необходимое";
+"THIRD_LINE" = "3-я линия";
+"WIFI" = "Платный Wi-Fi в фойе";
+"KM_TO_AIRPORT" = "30 км до аэропорта";
+"KM_TO_BEACH" = "1 км до пляжа";
