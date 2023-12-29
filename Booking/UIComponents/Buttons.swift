@@ -17,10 +17,22 @@ struct ActionButtonView: View {
         }) {
             Text(buttonText)
                 .foregroundColor(.white)
-                .frame(width: 313, height: 48, alignment: .center)
+                .frame(width: 343, height: 48, alignment: .center)
                 .background(Color.blue)
                 .cornerRadius(15)
                 .padding()
+        }
+    }
+}
+
+struct NavBackButton: View {
+    let dismiss: DismissAction
+    
+    var body: some View {
+        Button {
+            dismiss()
+        } label: {
+            Image("back")
         }
     }
 }

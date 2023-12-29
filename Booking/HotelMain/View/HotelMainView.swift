@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct HotelMainView: View {
+    @State private var isRoomSelected = false
     @StateObject private var viewModel = HotelViewModel()
     
     var body: some View {
@@ -23,9 +24,15 @@ struct HotelMainView: View {
             .navigationTitle(Localizable.hotel.localized)
             .font(.customFont(size: 18))
             .navigationBarTitleDisplayMode(.inline)
+            .background(
+                NavigationLink(destination: RoomChooseView(), isActive: $isRoomSelected) {
+                    EmptyView()
+                }
+            )
         }
         ActionButtonView(action: {
-            print("Go check room!")
+            isRoomSelected = true
+            print("Go check!")
         }, buttonText: Localizable.roomSelect.localized)
     }
     
@@ -33,7 +40,6 @@ struct HotelMainView: View {
         ZStack {
             VStack {
                 ImageSlider(images: viewModel.images.map { $0.rawValue }, currentIndex: $viewModel.currentIndex)
-                    .cornerRadius(10)
                 PageControl(numberOfPages: viewModel.images.count, currentPage: $viewModel.currentIndex)
                     .padding(.vertical, -35)
                 ZStack {
