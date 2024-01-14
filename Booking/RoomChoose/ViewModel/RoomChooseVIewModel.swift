@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class RoomChooseVIewModel: ObservableObject {
+class RoomChooseViewModel: ObservableObject {
     @Published var currentIndex = 0
     let images: [HotelImage] = [.main0, .main1, .main2, .main3]
 }

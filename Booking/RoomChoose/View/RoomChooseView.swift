@@ -9,23 +9,29 @@ import SwiftUI
 
 struct RoomChooseView: View {
     @Environment(\.dismiss) var dismiss
-    @StateObject private var viewModel = RoomChooseVIewModel()
+    @State private var isReservRoom = false
+    @StateObject private var viewModel = RoomChooseViewModel()
     
     var body: some View {
         ScrollView {
             VStack {
                 hotelFirst
                 ActionButtonView(action: {
-                    print("231")
+                    isReservRoom = true
                 }, buttonText: "Выбрать номер")
                 Divider()
                     .padding(.bottom, 10)
                 hotelSecond
                 ActionButtonView(action: {
-                    print("231")
+                    isReservRoom = true
                 }, buttonText: "Выбрать номер")
             }
         }
+        .background(
+            NavigationLink(destination: ReservationRoomView(), isActive: $isReservRoom) {
+                EmptyView()
+            }
+        )
     }
     
     var hotelFirst: some View {
@@ -71,10 +77,6 @@ struct RoomChooseView: View {
             }
             .padding(.trailing, 25)
         }
-        .navigationTitle(Localizable.hotelName.localized)
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
     }
     
     var hotelSecond: some View {
